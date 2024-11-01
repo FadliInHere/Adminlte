@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Siswa</title>
+  <style>
+    body {
+      font-family: 'Trebuchet MS';
+      background-color: #f9f1f0;
+    }
+
+    .container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fadcd9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: auto;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      font-weight: bold;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .form-group input[type="radio"],
+    .form-group input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group .input-group {
+      display: flex;
+      align-items: center;
+    }
+
+    .form-group .input-group input[type="checkbox"],
+    .form-group .input-group input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    .form-group .input-group label {
+      margin-bottom: 0;
+    }
+
+    .form-group .file-input {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .form-group .file-input input[type="file"] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+
+    .form-group .file-input .file-label {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .form-group .file-input .file-label:hover {
+      background-color: #f2f2f2;
+    }
+
+    .form-group .file-input .file-label .file-name {
+      margin-left: 10px;
+    }
+
+    .form-group .button-group {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .form-group .button-group button {
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Data Siswa</h2>
+    <form>
+      <div class="form-group">
+        <label for="nis">NIS</label>
+        <input type="text" id="nis" name="nis" placeholder="NIS">
+      </div>
+      <div class="form-group">
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama" placeholder="Nama">
+      </div>
+      <div class="form-group">
+        <label for="jenis_kelamin">Jenis Kelamin</label>
+        <div class="input-group">
+          <input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki">
+          <label for="laki-laki">Laki-laki</label>
+        </div>
+        <div class="input-group">
+          <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+          <label for="perempuan">Perempuan</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="jurusan">Jurusan</label>
+        <select id="jurusan" name="jurusan">
+          <option value="TJKT">TJKT</option>
+          <option value="DKV">DKV</option>
+          <option value="PPLG">PPLG</option>
+        </select>
+      <div class="form-group">
+        <label for="kelas">Kelas : </label>
+        <select id="kelas" name="kelas">
+          <option value="X">X</option>
+          <option value="XI">XI</option>
+          <option value="XII">XII</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="kemampuan">Kemampuan</label>
+        <div class="input-group">
+          <input type="checkbox" id="pemrograman" name="kemampuan" value="pemrograman">
+          <label for="pemrograman">Pemrograman</label>
+        </div>
+        <div class="input-group">
+          <input type="checkbox" id="jaringan" name="kemampuan" value="jaringan">
+          <label for="jaringan">Jaringan</label>
+        </div>
+        <div class="input-group">
+          <input type="checkbox" id="desain" name="kemampuan" value="desain">
+          <label for="desain">Desain</label>
+        </div>
+        <div class="input-group">
+          <input type="checkbox" id="editing_video" name="kemampuan" value="editing_video">
+          <label for="editing_video">Editing Video</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="foto">Foto</label>
+        <div class="file-input">
+          <input type="file" id="foto" name="foto">
+          <label for="foto" class="file-label">
+            <span class="file-name">Pilih Foto</span>
+          </label>
+        </div>
+      </div>
+      <div class="form-group button-group">
+        <button type="submit">Simpan</button>
+        <button type="reset">Edit</button>
+        <button type="button">Delete</button>
+        <button type="button">Keluar</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

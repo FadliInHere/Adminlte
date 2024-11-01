@@ -1,0 +1,34 @@
+.biodata {
+    padding: 20px;
+    font-family: 'Trebuchet MS';
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: #eee;
+    }
+    margin: auto;
+    width: 50%;
+  }
+  .biodata h1{
+    text-align: center;
+    margin: 0 0;
+  }
+  body{
+    background-image: linear-gradient(to bottom, #f2f2f2, #ccccff);
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    padding: 0 0;
+  }
+  .biodata {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
